@@ -1,0 +1,14 @@
+p {
+  font-family: rubik, Arial, Helvetica, sans-serif;
+  color: var(--num2);
+  padding: 0 10px;
+}
+@media (min-width: 768px) {
+  p {
+    font-size: 24px;
+  }
+}
+.bcg-cont {
+  background-color: var(--back);
+  margin-bottom: 20px;
+}

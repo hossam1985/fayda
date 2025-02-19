@@ -1,0 +1,24 @@
+p {
+  font-family: rubik, Arial, Helvetica, sans-serif;
+}
+@media (min-width: 768px) {
+  p {
+    font-size: 24px;
+  }
+}
+.bcg-cont {
+  background-color: var(--back);
+  margin-bottom: 20px;
+}
+.red {
+  color: var(--red);
+  font-family: cairo, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.ex {
+  border-radius: 10px;
+  -webkit-box-shadow: -2px -2px 8px 1px rgb(0 90 255 / 48%), 2px 2px 8px 1px rgb(0 213 83 / 41%);
+          box-shadow: -2px -2px 8px 1px rgb(0 90 255 / 48%), 2px 2px 8px 1px rgb(0 213 83 / 41%);
+  margin: 12px 5px 8px;
+  padding: 5px 8px;
+}

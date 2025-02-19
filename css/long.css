@@ -1,0 +1,111 @@
+p {
+  font-family: rubik, Arial, Helvetica, sans-serif;
+}
+@media (min-width: 768px) {
+  p {
+    font-size: 24px;
+  }
+}
+.bcg-cont {
+  background-color: var(--back);
+  margin-bottom: 20px;
+}
+.red {
+  color: var(--red);
+  font-family: cairo, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.t-1 span {
+  background-color: var(--num1);
+}
+.t-1 .bred {
+  background-color: var(--red);
+}
+.t-1 .bgre {
+  background-color: green;
+}
+.t-1 .bgre,.t-1 .bred,.t-1 span {
+  color: var(--white);
+  padding: 5px;
+  border-radius: 10px;
+}
+.t-1 .tb1 {
+  background-color: #a5cff3;
+  color: var(--dark);
+}
+.bcgr tr:hover {
+  background-color: transparent;
+}
+.plan-c1 {
+  background-color: #2195f336 !important;
+}
+.plan-c2 {
+  background-color: #ef930a25 !important;
+}
+.plan-c3 {
+  background-color: #ccdc394b !important;
+}
+.plan-c4 {
+  background-color: #0fd12634 !important;
+}
+.anbor {
+  background: #f0f4f8;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  padding: 10px 8px;
+  margin: 20px 0;
+}
+.anbor > * {
+  z-index: 110;
+  position: relative;
+}
+.anbor::before {
+  content: "";
+  position: absolute;
+  width: 106%;
+  background-image: -webkit-gradient(
+    linear,
+    left top, left bottom,
+    from(rgb(0, 183, 255)),
+    to(rgb(255, 48, 255))
+  );
+  background-image: -o-linear-gradient(
+    top,
+    rgb(0, 183, 255),
+    rgb(255, 48, 255)
+  );
+  background-image: linear-gradient(
+    180deg,
+    rgb(0, 183, 255),
+    rgb(255, 48, 255)
+  );
+  height: 50px;
+  top: 20px;
+  left: -3%;
+  -webkit-animation: rotBGimg 10s linear infinite alternate;
+          animation: rotBGimg 10s linear infinite alternate;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  -webkit-transform-origin: center left;
+      -ms-transform-origin: center left;
+          transform-origin: center left;
+}
+@-webkit-keyframes rotBGimg {
+  to {
+    top: calc(100% - 70px);
+  }
+}
+@keyframes rotBGimg {
+  to {
+    top: calc(100% - 70px);
+  }
+}
+.anbor::after {
+  content: "";
+  position: absolute;
+  background: var(--white);
+  inset: 2px;
+  border-radius: 18px;
+}

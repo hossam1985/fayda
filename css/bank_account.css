@@ -1,0 +1,28 @@
+p {
+  font-family: rubik, Arial, Helvetica, sans-serif;
+  color: var(--num2);
+  padding: 0 10px;
+}
+@media (min-width: 768px) {
+  p {
+    font-size: 24px;
+  }
+}
+.bcg-cont {
+  background-color: var(--back);
+  margin-bottom: 20px;
+}
+.red {
+  color: var(--red);
+  font-family: cairo, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.num1 {
+  color: var(--num1);
+}
+.white {
+  color: white;
+  background-color: var(--red);
+  padding: 0 10px;
+  border-radius: 20px;
+}
